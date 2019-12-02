@@ -1,0 +1,57 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="4.2.0.709249" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="2Apellidos.xaml.cs">
+      <DependentUpon>2Apellidos.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="1MainPage.xaml.cs">
+      <DependentUpon>1MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="3Nacimiento.xaml.cs">
+      <DependentUpon>3Nacimiento.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="4Correo.xaml.cs">
+      <DependentUpon>4Correo.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="5Telefono.xaml.cs">
+      <DependentUpon>5Telefono.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="6Contraseña.xaml.cs">
+      <DependentUpon>6Contraseña.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="7Contraseña2.xaml.cs">
+      <DependentUpon>7Contraseña2.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="2Apellidos.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="6Contraseña.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="7Contraseña2.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="4Correo.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="3Nacimiento.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="5Telefono.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
